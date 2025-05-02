@@ -9,8 +9,8 @@ FOR EACH ROW
 BEGIN
     -- Update the quantity of the ordered item
     UPDATE items
-    SET quantity = quantity - NEW.number
-    WHERE id = NEW.item_name;
+        SET quantity = quantity - NEW.number
+        WHERE id = NEW.item_name;
 END$$
 
 DELIMITER ;
